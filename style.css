@@ -6,7 +6,7 @@ body{
     background-color: #f1faee;
 }
 header .navbar{
-    background-color: #024270 !important;
+    background-color: #013a63 !important;
 }
 main{
     flex: 1 0 auto;
@@ -25,5 +25,5 @@ main{
      }
 }
 .footer{
-    background-color: #024270 !important;
+    background-color: #013a63 !important;
 }

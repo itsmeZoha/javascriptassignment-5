@@ -114,18 +114,16 @@ function generateAStrongPassword(){
 }
   //-----------------------Converting Strings----------------------//
 function convertingStrings(){
-  let num = '246.47691'
-  console.log(num)
-  console.log(typeof num)
-  // num = parseInt(num)
-  //  num = parseFloat(num)
-   num = Number(num)
-  // console.log(num)
-  //  console.log(typeof num)
+  let num = document.getElementById('inputText').value;
+  num = Number(num) 
   num = num.toFixed(2)           //function tofixed sirf number datatype pr chalta ha // lakin datatype string hi ho gi
-   num = Number(num)          // or agr datatype number m karni ha tu dubara 'Number' operator use kary gy //Number operator best ha 
-  console.log(num)
-  console.log(typeof num)
+  num = Number(num) 
+  if(num == 0){
+    alert("Enter your string to convert in number!")
+  } else{
+  document.getElementById('output').innerHTML = "<div>num = " +num +"</div>" 
+  + "<div>Datatype is = " + (typeof num) + "</div>"
+  }
 }
  //-----------------------Controlling Length----------------------//
 function controllingLength(){
