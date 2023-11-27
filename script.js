@@ -1,12 +1,12 @@
-// let userName = prompt("Please Enter your name to visit our website? ") 
-// window.onload = function(){
-//    let message ="Have a Good Day"
+let userName = prompt("Please Enter your name to visit our website? ") 
+window.onload = function(){
+   let message ="Have a Good Day"
 // //    let firstName = prompt("Please Enter Your First Name?")
 // //    let lastName = prompt("Please Enter Your Last Name?")
 // //    let fullName = firstName +" "+ lastName
-//    let emoji = ('&#10024;')
-//    document.getElementById("userName").innerHTML = message + " " + userName+ emoji   // Emoji tranformation //
-// }
+   let emoji = ('&#10024;')
+   document.getElementById("userName").innerHTML = message + " " + userName+ emoji   // Emoji tranformation //
+}
  // -----------------Clear Output ----------------//
  document.getElementById('clearOutputButton').onclick = function(){
    document.getElementById('output').innerHTML = ""
