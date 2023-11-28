@@ -21,6 +21,7 @@ window.onload = function(){
  }
   // -----------------Round A Number----------------//
   function roundANumber(){
+    // Example  //
   //  var num1 = 12.48
   //  var num2 = 13.4555
   //  var num3 = 36.57
@@ -132,13 +133,29 @@ if (!num){
   alert('Please type something to  control the length of string....')
   return
  }
-console.log(typeof num)
-num = Number(num)
+// console.log(typeof num)
+num = Number(num) 
 
-num = num.toFixed(2)
-num = Number(num)
-console.log(num)
-console.log(typeof num)
+let limit = prompt("Please enter the limit for decimal number...")
+if(limit == 0 || limit == null){
+  alert("Enter your limit please...")
+  return
+}
+num = num.toFixed(limit);
+
+// num = num.toFixed(2);
+num = Number(num);
+if (num == 0) {
+  alert("Enter your string to convert in number!");
+} else {
+  document.getElementById("output").innerHTML =
+    "<div>num = " +
+    num +
+    "</div>" +
+    "<div>Datatype is = " +
+    typeof num +
+    "</div>";
+}
 
 }
  //------------------------Calculate GST------------------------//
