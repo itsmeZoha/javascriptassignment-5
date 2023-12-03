@@ -21,20 +21,6 @@ window.onload = function(){
  }
   // -----------------Round A Number----------------//
   function roundANumber(){
-    // Example  //
-  //  var num1 = 12.48
-  //  var num2 = 13.4555
-  //  var num3 = 36.57
-  //  var totalPrice = num1 + num2 + num3
-  //  console.log(totalPrice)
-  //  var exactTotalPrice = Math.round(totalPrice)
-  //  console.log(exactTotalPrice)
-  //  console.log(Math.round(15.45)) 
-  //  console.log(Math.round(24.57))
-  //  console.log(Math.round(36.50))
-  // console.log(Math.round(-15.45))
-  //  console.log(Math.ceil(-24.57))
-  //  console.log(Math.floor(-36.50))
 
   let number = document.getElementById('inputText').value;
   if (!number){
